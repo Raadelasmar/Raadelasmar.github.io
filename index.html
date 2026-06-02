@@ -70,6 +70,15 @@ h1 .accent{color:var(--accent)}
 [data-theme="light"] .btn.primary{color:#fff}
 .btn.primary:hover{filter:brightness(1.08)}
 .btn .ic{font-family:var(--mono);font-size:13px;font-weight:600}
+.github-icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.github-icon svg{
+  display:block;
+}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
 .reveal.in{opacity:1;transform:none}
 .about-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:48px;align-items:start}
@@ -285,7 +294,7 @@ body::before{content:'';position:fixed;inset:0;z-index:-3;background:radial-grad
 <button id="music-toggle" aria-label="Toggle background music"><span class="mdot"></span><span id="music-label">music off</span></button>
 <audio id="bg-music" loop preload="none" src="assets/music.mp3"></audio>
 <nav id="nav">
-    <a href="#hero" class="logo">raed<span class="blink">_</span></a>
+    <a href="#hero" class="logo">ra'ed<span class="blink">_</span></a>
   <div class="nav-links" id="navLinks">
     <a href="#about">about</a>
     <a href="#beyond">beyond</a>
@@ -303,15 +312,15 @@ body::before{content:'';position:fixed;inset:0;z-index:-3;background:radial-grad
   <section id="hero">
     <div class="hero-copy">
       <div class="hero-term reveal">
-        <span class="prompt">raed@portfolio</span>:<span style="color:var(--blue)">~</span>$ whoami<br>
+        <span class="prompt">ra'ed@portfolio</span>:<span style="color:var(--blue)">~</span>$ whoami<br>
         <span class="out">// Electrical Engineer &middot; intelligent communication systems</span>
       </div>
       <h1 class="reveal">Ra'ed<br>Alasmar<span class="accent">.</span></h1>
       <p class="hero-sub reveal" id="typed-tagline" data-text="Bridging radio access networks and machine learning, from BTS sites to AI agents."></p>
-      <p class="hero-loc reveal"><i>&#9657;</i> Budapest, Hungary &middot; open to internships</p>
+      <p class="hero-loc reveal"><i>&#9657;</i> Budapest, Hungary </p>
       <div class="hero-links reveal">
         <a href="assets/Ra%27ed_resume_all.pdf" class="btn primary"><span class="ic">&darr;</span> Download CV</a>
-        <a href="https://github.com/Raadelasmar" target="_blank" rel="noopener" class="btn"><span class="ic">gh</span> GitHub</a>
+        <a href="https://github.com/Raadelasmar" target="_blank" rel="noopener" class="btn"><span class="ic github-icon"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18A11.1 11.1 0 0 1 12 6.05c.98 0 1.96.13 2.88.38 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.42.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg></span> GitHub</a>
         <a href="https://www.linkedin.com/in/raedalasmar/" target="_blank" rel="noopener" class="btn"><span class="ic">in</span> LinkedIn</a>
         <a href="mailto:raadelasmar77@gmail.com" class="btn"><span class="ic">@</span> Email</a>
       </div>
@@ -535,7 +544,7 @@ body::before{content:'';position:fixed;inset:0;z-index:-3;background:radial-grad
         </div>
         <div class="demo-actions">
           <a href="assets/sdn-demo.mp4" target="_blank" rel="noopener" class="btn primary"><span class="ic">&#9654;</span> Watch demo</a>
-          <a href="https://github.com/Raadelasmar" target="_blank" rel="noopener" class="btn"><span class="ic">gh</span> GitHub</a>
+          <a href="https://github.com/Raadelasmar" target="_blank" rel="noopener" class="btn"><span class="ic github-icon"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18A11.1 11.1 0 0 1 12 6.05c.98 0 1.96.13 2.88.38 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.42.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg></span> GitHub</a>
         </div>
       </article>
     </div>
@@ -646,7 +655,7 @@ body::before{content:'';position:fixed;inset:0;z-index:-3;background:radial-grad
           <div class="contact-links" style="flex-direction:column;align-items:stretch">
             <a href="mailto:raadelasmar77@gmail.com" class="btn primary"><span class="ic">@</span> Email me</a>
             <a href="https://www.linkedin.com/in/raedalasmar/" target="_blank" rel="noopener" class="btn"><span class="ic">in</span> LinkedIn</a>
-            <a href="https://github.com/Raadelasmar" target="_blank" rel="noopener" class="btn"><span class="ic">gh</span> GitHub</a>
+            <a href="https://github.com/Raadelasmar" target="_blank" rel="noopener" class="btn"><span class="ic github-icon"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18A11.1 11.1 0 0 1 12 6.05c.98 0 1.96.13 2.88.38 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.42.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg></span> GitHub</a>
             <a href="assets/Ra%27ed_resume_all.pdf" class="btn"><span class="ic">&darr;</span> Download CV</a>
           </div>
         </div>
